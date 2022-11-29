@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    
+    <title></title>
+    
+</head>
+<body>
+<section>
+<div class= "pole">
+    <div class= "block">
+    <h1 class="siteName">Регистрация</h1>
+    </div>
+<form  action="index.html" name="myForm" id="myForm" method="POST" onsubmit="return validateForm();">
+    <div class="form-group">
+        <label for="name">Имя пользователя</label>
+        <label class="form-error" id="name_error">Введите имя!</label>
+        <input type="text"  name="name" id="name" style= "border-radius: 8px;">
+    </div>
+    <div class="form-group">
+        <label for="second_name">Фамилия</label>
+        <label class="form-error" id= "second_name_error">Введите фамилию!</label>
+        <input type="text" name="second_name" id="second_name" style= "border-radius: 8px;">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <label class="form-error" id="email_error">Введите корректную почту</label>
+        <input type="text"  name="email" id="email"style= "border-radius: 8px;">
+    </div>
+    <div class="form-group">
+        <label for="passwd1">Пароль</label>
+        <label class="form-error" id="passwd1_error">Введите пароль</label>
+        <input type="password" name="passwd1" id="passwd1"style= "border-radius: 8px;">
+    </div>
+    <div class="form-group">
+        <label for="passwd2">Повторите пароль</label>
+        <label class="form-error"id="passwd2_error">Введите пароль повторно</label>
+        <input type="password" name="passwd2" id="passwd2" style= "border-radius: 8px;">
+    </div>
+    <div class="form-group d-flex">
+        <label class="form-error" id="gender_error"> Укажите пол!</label>   
+        <div class="form-group">
+           <input type="radio" id="male" name="gender" value="man" style= "border-radius: 8px;">
+           <label for="male" style= "margin-left: 65px">Мужской</label> 
+        </div>
+        <div class="form-group">
+            <input type="radio" id="female" name="gender" value="woman" style= "border-radius: 8px;">
+            <label for="female"style= "margin-left: 65px">Женский</label>
+            
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="opt">Возраст</label>
+        <select name="opt" id="opt">
+            <option>до 18</option>
+            <option selected>от 18 до 30</option>
+            <option>старше 30</option>
+        </select>
+    </div>
+    <div class="form-group d-flex">
+        <div class="form-group" style="justify-content: flex-start">
+            <label for="subscribe" style="margin-right: 31px">Получать рассылку</label>
+            <input type="checkbox" name="subscribe" id="subscribe"style= "border-radius: 8px;">
+        </div>
+    </div>
+    <button type="submit"><h3>Отправить</h3></button>
+</form>
+</div>
+</section>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+*{margin:0 auto;  padding:0; display: block; font-family:Arial, Helvetica, sans-serif; 
+}
+html, body{
+    width:100%; 
+    height:110%;
+    background:linear-gradient(45deg,#ff59ff,hsl(189, 57%, 71%),rgb(163, 64, 230));
+    background-size: 400% 400% ;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position:0 50%  ;
+    }
+    50% {
+        background-position:100% 50% ;
+    }
+    100% {
+        background-position:0 50% ;
+    }
+    
+}
+ .form-error{
+     display: none;
+ }   
+.form-group{
+    margin: 0 auto;
+    width: 200px ;
+    background-color:rgb(255, 255, 255);
+    margin-top: 15px;
+    border-radius: 10px; 
+    /*padding-bottom: 3px;*/
+    
+    
+}
+.pole{
+    width: 400px;
+    height:735px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px; 
+    box-shadow: 2px 2px 20px 0px #7c7777;
+    border:none;
+    margin: 45px 325px  0;
+    
+    
+}
+.siteName{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    width: 238px ;
+    padding: 25px 0 5px;
+    margin: auto;
+}
+.submit{
+    height:20px; 
+}
+input{
+    height:15px;
+    width: 180px;    
+}
+
+
+button {
+appearance:none;
+-webkit-appearance:none;
+cursor: pointer;
+padding: 1px 30px;
+height: 25px;
+border-radius: 10px; 
+color: #ffffff;
+background: hsl(248, 53%, 58%);
+box-shadow: 2px 2px 8px 0px #7c7777;
+border:none;  
+margin-top: 8px; 
+transition: 0.4s;
+opacity: 0.85;
+}
+.form-error {
+    color: rgb(210, 27, 27);
+    font-size: 14px;
+    display: block;
+    display: none;
+}
+.email-erorr{
+    color:rgb(237, 0, 0);
+    font-size: 14px;
+    display: block;
+    display: none;
+}
